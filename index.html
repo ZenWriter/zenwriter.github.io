@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zen Writer | A minimalistic writing application!</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #coming-soon {
+            font-size: 12vw;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate( -50%, -50% ) rotate(-35deg);
+            white-space: nowrap;
+            color: rgba( 0, 0, 0, 0.3 );
+            font-family: "Ubuntu", monospace;
+            cursor: default;
+            transition: 0.4s color ease-in-out;
+        }
+
+        #logo {
+            height: 40px;
+            width: 150px;
+            text-align: center;
+            line-height: 34px;
+            border: 3px solid rgba( 0, 0, 0, 1 );
+            display: block;
+            position: fixed;
+            top: 15px;
+            left: 15px;
+            text-decoration: none;
+            font-family: "Ubuntu", monospace;
+            font-weight: bolder;
+            color:rgba( 0, 0, 0, 1 );
+            transition: 0.4s color ease-in-out, 0.4s background ease-in-out;
+        }
+
+        #logo:hover {
+            background: rgba( 0, 0, 0, 1 );
+            color: rgba( 255, 255, 255, 1 );
+        }
+
+        #logo:hover + #coming-soon {
+            color: rgba( 0, 0, 0, 1 );
+        }
+    </style>
+</head>
+<body>
+    <!-- THE WRAPPER -->
+    <div id="wrapper">
+        <!-- THE HOME LOGO -->
+        <a href="/" id="logo">
+            ZEN WRITER
+        </a>
+        <!-- END HOME LOGO -->
+        <!-- THE COMING SOON -->
+        <h1 id="coming-soon">
+            Coming Soon
+        </h1>
+        <!-- END COMING SOON -->
+    </div>
+    <!-- END WRAPPER -->
+</body>
+</html>
