@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WRITER — A modern, minimalistic writing application for those who believe less is more.</title>
+    <meta name="description" content="WRITER is a modern, minimalistic writing application for those who believe less is more.">
+    <!-- THE STYLESHEET -->
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: inherit;
+        }
+
+        @media screen and (max-width: 480px) {
+            #header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 90px;
+                padding: 20px;
+                background: rgba( 255, 255, 255, 1 );
+            }
+
+            #header #headbar {
+                width: 100%;
+                height: 50px;
+                border-radius: 7px;
+                box-shadow: 0 0 2px 2px rgba( 0, 0, 0, 0.15 );
+                line-height: 50px;
+                display: grid;
+                grid-template-rows: 1fr;
+                grid-template-columns: 50px 1fr 50px;
+                grid-column-gap: 10px;
+            }
+
+            #header #headbar .header-button {
+                width: 50px;
+                height: 50px;
+                border-radius: 7px;
+                background: transparent;
+                cursor: pointer;
+                border: 0;
+                outline: none;
+                -webkit-tap-highlight-color: transparent;
+                -moz-tap-highlight-color: transparent;
+            }
+
+            #header #headbar #logo {
+                font-size: 22px;
+                font-weight: 500;
+                font-family: "Ubuntu", sans-serif;
+                text-align: center;
+                text-decoration: none;
+            }
+
+            #header #headbar #menu-toggle-icon {
+                width: 20px;
+                height: 2px;
+                background: rgba( 0, 0, 0, 1 );
+                margin: 0 auto;
+                position: relative;
+            }
+
+            #header #headbar #menu-toggle-icon::before {
+                content: "";
+                width: 20px;
+                height: 2px;
+                background: rgba( 0, 0, 0, 1 );
+                position: absolute;
+                left: 0;
+                top: -7px;
+            }
+
+            #header #headbar #menu-toggle-icon::after {
+                content: "";
+                width: 20px;
+                height: 2px;
+                background: rgba( 0, 0, 0, 1 );
+                position: absolute;
+                left: 0;
+                top: 7px;
+            }
+        }
+    </style>
+    <!-- END STYLESHEET -->
+</head>
+<body>
+    
+    <!-- THE HEADER -->
+    <header id="header">
+        <!-- THE HEADBAR -->
+        <div id="headbar">
+            <!-- THE MENU TOGGLE -->
+            <button id="menu-toggle" class="header-button">
+                <!-- THE MENU TOGGLE ICON -->
+                <div id="menu-toggle-icon"></div>
+                <!-- END MENU TOGGLE ICON -->
+            </button>
+            <!-- END MENU TOGGLE -->
+            <!-- THE LOGO -->
+            <div id="logo">
+                <a href="/">WRITER</a>
+            </div>
+            <!-- END LOGO -->
+            <!-- THE SEARCH TOGGLE -->
+            <button id="search-toggle" class="header-button">
+                <!-- THE SEARCH TOGGLE ICON -->
+                <div id="search-toggle-icon"></div>
+                <!-- END SEARCH TOGGLE ICON -->
+            </button>
+            <!-- END SEARCH TOGGLE -->
+        </div>
+        <!-- END HEADBAR -->
+    </header>
+    <!-- END HEADER -->
+
+    <!-- THE JAVASCRIPT -->
+    <script>
+    
+    </script>
+    <!-- END JAVASCRIPT -->
+</body>
+</html>
